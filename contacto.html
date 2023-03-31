@@ -16,6 +16,7 @@
     ">
     <link rel="stylesheet" type="text/css" href="estilo.css">
 
+    <script src="funciones.js"></script>
 </head>
 
 <body>
@@ -42,23 +43,23 @@
     <main>
         <div class="container">
             <p class="h1">Formulario de compra</p>
-            <form>
+            <form id="formulario">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" aria-describedby="ayudaNombre">
+                    <input id="nombre" type="text" class="form-control" aria-describedby="ayudaNombre">
                 </div>
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="tel" class="form-control" id="telefono" aria-describedby="ayudaNombre">
+                    <input id="telefono" type="tel" class="form-control"  aria-describedby="ayudaNombre">
                 </div>
                 <div class="mb-3">
                     <label for="correo" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="correo" aria-describedby="ayudaCorreo">
+                    <input id="correo" type="email" class="form-control"  aria-describedby="ayudaCorreo">
                     <div id="emailHelp" class="form-text">Nunca compartiremos tu mail con otros..</div>
                 </div>
                 <div class="mb-3">
                     <label for="motivo" class="form-label">Motivo</label>
-                    <select class="form-select" aria-label="Seleccione el Motivo del Contacto" name="contacto">
+                    <select id="motivo" class="form-select" aria-label="Seleccione el Motivo del Contacto" name="contacto">
                         <option value="consulta">Consulta</option>
                         <option value="reclamo">Reclamo</option>
                         <option value="cotizacion">Cotización</option>
